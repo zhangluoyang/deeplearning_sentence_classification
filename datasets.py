@@ -276,7 +276,7 @@ class DataSetWord2vecMeanRnnConvert(object):
                 v = self.word2vec[word].reshape(1, self.embedding_size)
             else:
                 v = np.zeros(shape=(1, self.embedding_size))
-                vec_data[1][j] = v
+            vec_data[0][j] = v
         return vec_data
 
 
@@ -553,7 +553,7 @@ class DataSetWord2vecBiRnnConvert(object):
                 v = self.word2vec[word].reshape(1, self.embedding_size)
             else:
                 v = np.zeros(shape=(1, self.embedding_size))
-                vec_data[1][j] = v
+            vec_data[0][j] = v
         return vec_data
 
 
@@ -1071,7 +1071,7 @@ class DataSetWord2vecConvert(object):
                 v = self.word2vec[word].reshape(1, self.embedding_size)
             else:
                 v = np.zeros(shape=(1, self.embedding_size))
-                vec_data[1][j] = v
+            vec_data[0][j] = v
         return vec_data
 
 
